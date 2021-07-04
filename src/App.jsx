@@ -5,7 +5,7 @@ const App = () => {
   const [search, setSearch] = useState("Lahore");
   useEffect(() => {
     const fetchData = async () => {
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=1483c897376b68ec389fe82ab05db852`;
+      const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=yourapikey`;
       const response = await fetch(url);
       const data = await response.json();
       // console.log(data);
